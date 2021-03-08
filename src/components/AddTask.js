@@ -24,13 +24,13 @@ const AddTask = ({ onAdd }) => {
         placeholder='Add Task'
         
          value={text} 
-         onchange={(e) => setText ( e.target.value)}/>
+         onChange={(e) => setText (e.target.value)}/>
       </div>
 
       <div className= 'form-control'>
         <lable>Day & Time</lable>
         <input type='text' placeholder='Add Day & Time' 
-         value={day} onchange={(e) => setDay(e.target.value)}/>
+         value={day} onChange={(e) => setDay (e.target.value)}/>
       </div>
 
       <div className= 'form-control form-control-check'>
@@ -41,7 +41,7 @@ const AddTask = ({ onAdd }) => {
       <input type='submit' 
       checker={reminder}
       value='Save Task' className='btn btn-block'  //提交栏
-       value={reminder} onchange={(e) => setReminder(e.currentTarget.checked)}/>
+       value={reminder} onChange={(e) => setReminder(e.currentTarget.checked)}/>
     </form>
   )
 }
